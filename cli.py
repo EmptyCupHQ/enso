@@ -13,6 +13,12 @@ def mail(addrp:str, contentp:str):
         _send_mail(addr, content)
 
 
+@enso.command()
+def reshape(csvp:str, col_order:str):
+    display(utils.blue(csvp))
+    display(utils.yellow(col_order))
+
+
 
 def _send_mail(addr, content):
     display("To: [purple]%s[/purple]" % addr)
